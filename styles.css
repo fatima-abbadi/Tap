@@ -1,0 +1,191 @@
+:root {
+    /*--main-color: #D1884F;*/
+    --secondary-color: #008AAA;
+    --tertiary-color: #3BBADB;
+    }
+    
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'Poppins', sans-serif;
+    }
+    nav {
+        background-color:white; /* Black background */
+        color:black; 
+        padding: 10px;
+       
+    }
+    
+    nav ul {
+        list-style: none;
+      
+        display: flex;
+        justify-content: flex-end; 
+        margin-left: 50px;
+        padding-right: 100px;
+        padding-top: 30px;
+
+    }
+    
+    nav li {
+        margin-left:40px; 
+       
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: black; 
+    }
+    
+    nav a i {
+        margin-right: 5px; 
+    }
+    
+    nav li a:hover {
+        color: #FFA500; 
+    }
+    header {
+        
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    .intro {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        padding: 40px;
+    }
+    
+    .heading {
+        max-width: 50%; 
+    }
+    
+    .heading h2 {
+        margin-bottom: 10px;
+    }
+    
+    .heading h1 {
+        font-size: 5em;
+        color: #068fb1;
+        padding-top: 20px;
+    }
+    
+    .heading p {
+        margin-bottom: 20px;
+        padding-top: 20px;
+        font-size: 1.5em;
+    }
+    
+    .heading span {
+        color: #d99e6e; 
+    }
+    
+    .heading button {
+       
+        color: #fff;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #008AAA;
+        cursor: pointer;
+        border-radius: 0.2cm;
+        font-weight: bold;
+
+    }
+    
+    .image img {
+        max-width: 100%;
+        height: auto;
+        width:900px;
+        margin-top: -60px;
+    }
+  
+@media only screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .intro {
+        padding: 20px;
+    }
+
+    .heading {
+        max-width: 100%;
+    }
+
+    .image {
+        order: -1; 
+    }
+}
+@media screen and (min-width: 768px) {
+    .intro {
+      flex-direction: row;
+    }
+  
+    .heading {
+      max-width: 50%;
+    }
+  
+    .image img {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    nav ul {
+      justify-content: center;
+    }
+    .heading h1 {
+        font-size: 1.5em;
+       
+        padding-top: 5px;
+    }
+    .heading p {
+        margin-bottom: 8px;
+        padding-top: 10px;
+        font-size: 0.5em;
+    }
+    
+    
+    nav li {
+      margin: 0 5px;
+    }
+  
+    .heading {
+      max-width: 100%;
+    }
+  
+    .image img {
+      margin-top: 10px; 
+
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .intro {
+        flex-direction: column-reverse; /* Change the order on small screens */
+      }
+      nav a {
+       font-size: small; 
+    }
+  }
